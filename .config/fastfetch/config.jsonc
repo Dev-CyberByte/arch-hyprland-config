@@ -1,0 +1,93 @@
+{
+"logo": {
+    "type": "kitty",
+    "source": "/home/jp.root/.config/fastfetch/LUFFY.jpg",
+    "width": 20,
+    "height": 10,
+    "padding": {
+        "top": 1,
+        "left": 1,
+        "right": 3
+    }
+},
+    "display": {
+        "separator": "  →  ",
+        "color": {
+            "keys": "white",
+            "title": "bright_white"
+        }
+    },
+    "modules": [
+        {
+            "type": "title",
+            "format": "{user-name}@{host-name}",
+            "color": {
+                "user": "bright_white",
+                "at": "bright_black",
+                "host": "white"
+            }
+        },
+        {
+            "type": "separator",
+            "string": "─────────────────────"
+        },
+        {
+            "type": "os",
+            "key": "  os",
+            "keyColor": "bright_black"
+        },
+        {
+            "type": "kernel",
+            "key": "  kernel",
+            "keyColor": "bright_black"
+        },
+        {
+            "type": "wm",
+            "key": "  wm",
+            "keyColor": "bright_black"
+        },
+        {
+            "type": "terminal",
+            "key": "  term",
+            "keyColor": "bright_black"
+        },
+        {
+            "type": "shell",
+            "key": "  shell",
+            "keyColor": "bright_black"
+        },
+        {
+            "type": "separator",
+            "string": "─────────────────────"
+        },
+        {
+            "type": "cpu",
+            "key": "󰍛  cpu",
+            "keyColor": "bright_black"
+        },
+        {
+            "type": "memory",
+            "key": "󰾅  ram",
+            "keyColor": "bright_black"
+        },
+        {
+            "type": "disk",
+            "key": "󰋊  disk",
+            "keyColor": "bright_black"
+        },
+        {
+            "type": "battery",
+            "key": "  bat",
+            "keyColor": "bright_black"
+        },
+        {
+            "type": "separator",
+            "string": "─────────────────────"
+        },
+        {
+            "type": "colors",
+            "symbol": "circle",
+            "paddingLeft": 1
+        }
+    ]
+}
