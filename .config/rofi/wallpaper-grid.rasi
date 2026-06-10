@@ -1,0 +1,81 @@
+configuration {
+    show-icons: true;
+}
+
+* {
+    bg: #080808;
+    bg2: #111111;
+
+    fg: #e5e5e5;
+    fg-muted: #8a8a8a;
+
+    accent: #2b2b2b;
+
+    background-color: transparent;
+    text-color: @fg;
+
+    font: "JetBrainsMono Nerd Font 11";
+}
+
+window {
+    transparency: "real";
+    background-color: rgba(8,8,8,0.82);
+
+    border: 0px;
+    border-color: #202020;
+
+    border-radius: 24px;
+}
+
+    mainbox {
+    padding: 24px;
+    spacing: 18px;
+}
+
+inputbar {
+    background-color: rgba(255,255,255,0.03);
+
+    border-radius: 18px;
+
+    padding: 16px;
+}
+
+prompt {
+    enabled: false;
+}
+
+entry {
+    placeholder: "Search";
+}
+
+listview {
+    columns: 4;
+    lines: 3;
+    spacing: 28px;
+}
+
+element {
+    orientation: vertical;
+
+    background-color: transparent;
+
+    border-radius: 18px;
+
+    padding: 10px;
+}
+
+element selected {
+    background-color: rgba(255,255,255,0.04);
+}
+
+element-icon {
+    size: 320px;
+}
+
+element-text {
+    text-color: @fg-muted;
+
+    horizontal-align: 0.5;
+
+    margin: 8px 0px 0px 0px;
+}
