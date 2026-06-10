@@ -1,0 +1,96 @@
+* {
+    bg:       #0c0c0eF5;
+    bg-alt:   #131316F5;
+    bg-hover: rgba(255, 255, 255, 0.05);
+    fg:       #e0e0e8;
+    fg-dim:   #3a3a42;
+    fg-mid:   #7a7a88;
+    accent:   #ffffff;
+    border-c: rgba(255, 255, 255, 0.08);
+
+    background-color: transparent;
+    text-color:       @fg;
+}
+
+window {
+    background-color: @bg;
+    border:           1px;
+    border-color:     @border-c;
+    border-radius:    18px;
+    width:            520px;
+    padding:          0;
+}
+
+mainbox {
+    background-color: transparent;
+    children:         [ inputbar, listview ];
+    spacing:          0;
+}
+
+inputbar {
+    background-color: @bg-alt;
+    border-radius:    18px 18px 0 0;
+    border:           0 0 1px 0;
+    border-color:     @border-c;
+    padding:          16px 20px;
+    spacing:          10px;
+    children:         [ prompt, entry ];
+}
+
+prompt {
+    text-color: @fg-mid;
+    font:       "JetBrainsMono Nerd Font 13";
+}
+
+entry {
+    text-color:        @fg;
+    placeholder:       "Buscar...";
+    placeholder-color: @fg-dim;
+    font:              "JetBrainsMono Nerd Font 13";
+}
+
+listview {
+    background-color: transparent;
+    padding:          8px;
+    spacing:          1px;
+    lines:            8;
+    scrollbar:        false;
+    fixed-height:     false;
+}
+
+element {
+    background-color: transparent;
+    border-radius:    10px;
+    padding:          9px 14px;
+    spacing:          12px;
+    orientation:      horizontal;
+}
+
+element normal.normal {
+    background-color: transparent;
+    text-color:       @fg-mid;
+}
+
+element alternate.normal {
+    background-color: transparent;
+    text-color:       @fg-mid;
+}
+
+element selected.normal {
+    background-color: @bg-hover;
+    text-color:       @accent;
+    border:           1px;
+    border-color:     @border-c;
+}
+
+element-icon {
+    size:           22px;
+    vertical-align: 0.5;
+    margin:         0 2px 0 0;
+}
+
+element-text {
+    vertical-align: 0.5;
+    text-color:     inherit;
+    font:           "JetBrainsMono Nerd Font 13";
+}
