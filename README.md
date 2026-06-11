@@ -1,53 +1,90 @@
 # Arch Hyprland Config
 
-My personal Arch Linux and Hyprland configuration repository.
+> Mis configuraciones personales de Arch Linux + Hyprland — respaldo, control de cambios y evidencia de que Linux sí se puede aprender.
 
-## About
+---
 
-This repository contains my personal configuration files and customizations for:
+## Stack
 
-- Hyprland
-- Waybar
-- Kitty
-- Hyprlock
-- Hyprpaper
-- Rofi
-- Fastfetch
+| Componente | Herramienta |
+|---|---|
+| Sistema operativo | Arch Linux |
+| Compositor / WM | [Hyprland](https://hyprland.org/) (Wayland) |
+| Barra de estado | [Waybar](https://github.com/Alexays/Waybar) |
+| Terminal | [Kitty](https://sw.kovidgoyal.net/kitty/) |
+| Pantalla de bloqueo | [Hyprlock](https://github.com/hyprwm/hyprlock) |
+| Fondo de pantalla | [Hyprpaper](https://github.com/hyprwm/hyprpaper) |
+| Lanzador de apps | [Rofi](https://github.com/davatorium/rofi) |
+| Info del sistema | [Fastfetch](https://github.com/fastfetch-cli/fastfetch) |
 
-The goal of this repository is to:
+---
 
-- Keep backups of my configurations
-- Track changes over time
-- Learn Linux customization
-- Improve my workflow and productivity
-
-## Current Status
-
-Work in progress
-
-## Screenshots
-
-Coming soon.
-
-## Structure
+## Estructura
 
 ```text
 .config/
 ├── hypr/
-├── waybar/
+│   └── hyprland.conf       # Configuración principal del compositor
+├── waybar/                 # Barra de estado (módulos, estilos CSS)
 ├── kitty/
+│   └── kitty.conf          # Terminal con soporte GPU
 ├── rofi/
+│   └── powermenu.rasi      # Menú de apagado personalizado
 └── fastfetch/
+    └── config.jsonc        # Info del sistema al abrir terminal
 ```
 
-## Future Goals
+---
 
-- Improve Hyprland workflow
-- Create a vertical sidebar
-- Add widgets and monitoring tools
-- Build a cleaner cyberpunk-inspired setup
-- Learn more about Linux customization
+## Propósito del repositorio
 
-## Author
+- **Respaldo versionado** — si rompo algo, `git checkout` y listo
+- **Registro de cambios** — ver cómo fue evolucionando el setup
+- **Referencia personal** — documentar qué hace cada configuración y por qué
+- **Demostración práctica** — evidencia real de uso de Linux, no solo decirlo
 
-Juan Pablo Olivares
+---
+
+## Estado actual
+
+En progreso. Las configuraciones base ya están funcionando. Próximamente:
+
+- [ ] Integrar [Hyprlook](https://github.com/hyprwm/hyprlook) (en cuanto esté listo)
+- [ ] Sidebar vertical personalizada
+- [ ] Widgets de monitoreo del sistema
+- [ ] Refinar el estilo general
+- [ ] Agregar Hyprlock y Hyprpaper al repo
+
+---
+
+## Screenshots
+
+> Próximamente — cuando el setup esté más refinado.
+
+---
+
+## Instalación / Uso
+
+Este repo **no es un instalador automático**, es un respaldo personal. Si quieres usar alguna configuración:
+
+```bash
+# Clonar el repo
+git clone https://github.com/Dev-CyberByte/arch-hyprland-config.git
+
+# Copiar lo que necesites a tu ~/.config
+cp -r arch-hyprland-config/.config/hypr ~/.config/
+cp -r arch-hyprland-config/.config/waybar ~/.config/
+# ... y así con los demás
+```
+
+> Revisa cada archivo antes de copiar — algunas rutas o configuraciones pueden ser específicas de mi hardware.
+
+---
+
+## Autor
+
+**Juan Pablo Olivares** — [@Dev-CyberByte](https://github.com/Dev-CyberByte)
+
+---
+
+*"Aprendiendo que Arch no es difícil."*h
